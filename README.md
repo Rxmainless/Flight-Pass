@@ -1,6 +1,6 @@
 # Flight Pass - Projeto Autoral
 
-![Flight Pass Logo](<img src="https://i.pinimg.com/originals/8d/44/28/8d44285958161178e861f78d655ce22d.gif" alt="REQUIEM AETERNUM">) <!-- Altere o caminho para o logo do seu site se tiver -->
+![Flight Pass Logo](https://i.pinimg.com/originals/8d/44/28/8d44285958161178e861f78d655ce22d.gif) <!-- Altere o caminho para o logo do seu site se tiver -->
 
 ## Descrição
 
