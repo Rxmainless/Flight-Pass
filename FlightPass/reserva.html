@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva - Seu Site de Viagens</title>
+    <link rel="stylesheet" href="/FlightPass/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Seu Site de Viagens</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reserva.html">Reservas</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Faça sua Reserva</h2>
+        <form id="reserva-form">
+            <label for="produto">Escolha o Produto:</label>
+            <select id="produto" name="produto">
+                <option value="copacabana">Copacabana - Virada do Ano</option>
+                <option value="paris">Viagem para Paris - Temporada de Verão</option>
+                <option value="novaiorque">Viagem para Nova Iorque - Férias de Turismo</option>
+            </select>
+            <br>
+
+            <label for="pagamento">Forma de Pagamento:</label>
+            <select id="pagamento" name="pagamento">
+                <option value="pix">PIX</option>
+                <option value="cartao">Cartão de Crédito</option>
+                <option value="boleto">Boleto</option>
+            </select>
+            <br>
+
+            <div id="parcelamento" class="hidden">
+                <label for="parcelas">Escolha o Parcelamento:</label>
+                <select id="parcelas" name="parcelas">
+                    <option value="1">1x de R$ 3003.00</option>
+                    <option value="2">2x de R$ 1501.50</option>
+                    <option value="3">3x de R$ 1001.00</option>
+                    <option value="4">4x de R$ 750.75</option>
+                    <option value="5">5x de R$ 600.60</option>
+                    <option value="6">6x de R$ 550.50</option>
+                    <option value="7">7x de R$ 500.43</option>
+                    <option value="8">8x de R$ 462.34</option>
+                    <option value="9">9x de R$ 433.32</option>
+                    <option value="10">10x de R$ 410.22</option>
+                    <option value="11">11x de R$ 391.64</option>
+                    <option value="12">12x de R$ 375.25</option>
+                </select>
+            </div>
+            <br>
+
+            <button type="submit">Reservar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Seu Site de Viagens. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/FlightPass/js/scripts.js"></script>
+</body>
+</html>

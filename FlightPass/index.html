@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlightPass</title>
+    <link rel="stylesheet" href="/FlightPass/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>FlightPass</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reserva.html">Reservas</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Grid de Imagens -->
+        <section class="grid-container">
+            <div class="grid-item">
+                <img src="/FlightPass/imagens/copacabana.jpg" alt="Viagem para Copacabana">
+                <div class="description">Viagem para Copacabana - Ano Novo</div>
+            </div>
+            <div class="grid-item">
+                <img src="/FlightPass/imagens/paris.jpg" alt="Viagem para Paris">
+                <div class="description">Exploração em Paris</div>
+            </div>
+            <div class="grid-item">
+                <img src="/FlightPass/imagens/novaiorque.jpg" alt="Viagem para Nova Iorque">
+                <div class="description">Aventura em Nova Iorque</div>
+            </div>
+            <!-- Adicione mais itens conforme necessário -->
+        </section>
+
+        <!-- Texto Introdutório -->
+        <section class="intro-text">
+            <h2>Bem-vindo ao FlightPass!</h2>
+            <p>No FlightPass, nossa missão é proporcionar uma experiência de viagem incrível desde a escolha do destino até o retorno. Navegue por nossos pacotes e encontre a viagem perfeita para você. Seja para uma escapada rápida ou uma aventura épica, temos algo especial para cada viajante. Explore nossas ofertas e deixe-nos ajudar a tornar suas férias inesquecíveis!</p>
+        </section>
+    </main>
+
+    <!-- Modal para visualização das imagens -->
+    <div class="modal">
+        <div class="modal-content">
+            <!-- Imagem e descrição inseridas dinamicamente via JavaScript -->
+        </div>
+        <button class="modal-close">&times;</button>
+        <div class="modal-description"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Seu Site de Viagens. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/FlightPass/js/scripts.js"></script>
+</body>
+</html>

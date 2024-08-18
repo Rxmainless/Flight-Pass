@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Viagens Rápidas</title>
+    <link rel="stylesheet" href="/FlightPass/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Viagens Rápidas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contato</h2>
+        <p>Caso queiram um parceiro de projeto, ou estejam dispostos a me mandam alguma proposta sintam-se a vontade para me mandar uma mensagem!</p>
+
+        <section class="contact-info">
+            <h3>Informações de Contato</h3>
+            <p><strong>Telefone:</strong> +55 81 1234-5678</p>
+            <p><strong>Email:</strong> jorgemesquitacontato@gmail.com</p>
+            <p><strong>Endereço:</strong> Rua das Palmeiras, 123, Recife, PE, Brasil</p>
+        </section>
+
+        <section class="contact-form">
+            <h3>Vamos Trabalhar!</h3>
+            <form action="/FlightPass/submit-form" method="POST">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Assunto:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section class="social-media">
+            <h3>Siga-nos nas Redes Sociais</h3>
+            <p>Fique por dentro das últimas novidades, promoções e dicas de viagens.</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/mesquitaforall/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.linkedin.com/in/mesquitaforall/" target="_blank">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/mesquitaforall/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/mesquitaforall/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
+
+        <section class="business-hours">
+            <h3>Horário de Atendimento</h3>
+            <p>Segunda a Sexta: 9h - 18h</p>
+            <p>Sábado: 10h - 14h</p>
+            <p>Domingo: Fechado</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jorge - Rxmainless. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/FlightPass/js/script.js"></script>
+</body>
+</html>

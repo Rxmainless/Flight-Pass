@@ -1,0 +1,245 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body e Fonte */
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #1e1e1e;
+    color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #f44336; /* Cor de destaque */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #f44336; /* Cor de destaque */
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Texto Introdutório */
+.intro-text {
+    background-color: #1e1e1e;
+    color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.intro-text h2 {
+    font-size: 2rem;
+    color: #f44336; /* Cor de destaque */
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Grid de Imagens */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.grid-item {
+    position: relative;
+    width: 100%;
+    max-width: 200px; /* Ajuste o tamanho máximo conforme necessário */
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra ao passar o mouse */
+}
+
+.grid-item .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #f44336; /* Cor de destaque */
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.grid-item:hover .description {
+    opacity: 1; /* Exibe a descrição ao passar o mouse */
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.modal-description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #f44336; /* Cor de destaque */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+/* Formulário */
+form {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+form h2 {
+    color: #f44336; /* Cor de destaque */
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #f8f9fa;
+    font-size: 1.1rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #333;
+    color: #f8f9fa;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #f44336; /* Cor de destaque */
+}
+
+form button {
+    padding: 15px 25px;
+    background: #f44336; /* Cor de destaque */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #d32f2f; /* Cor de destaque mais escura */
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid #f44336; /* Cor de destaque */
+}
